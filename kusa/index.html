@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>草</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 10vh;
+      background-color: #fdfdfd;
+    }
+    ul { list-style: none; padding: 0; }
+    li { margin: 10px; font-size: 2em; }
+    a { text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<div id="protected" style="display:none;">
+  <h1>草</h1>
+  <ul>
+    <li><a href="manga/episode1.html">📖</a></li>
+    <li><a href="illust/gallery.html">🖼️</a></li>
+    <li><a href="model/3dviewer.html">📦</a></li>
+  </ul>
+  <p style="margin-top:2em;"><a href="https://forms.gle/your_form_url">💬</a></p>
+</div>
+
+<div id="denied" style="display:none;">
+  <h2>🚫 アクセスできません</h2>
+</div>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const password = prompt("パスワードを入力してください");
+    if (password === "inunokinmochi1w") {
+      document.getElementById("protected").style.display = "block";
+    } else {
+      document.getElementById("denied").style.display = "block";
+    }
+  });
+</script>
+
+</body>
+</html>
